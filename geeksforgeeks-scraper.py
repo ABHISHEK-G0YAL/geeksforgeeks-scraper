@@ -76,7 +76,7 @@ def sign_into_geeksforgeeks(username, password):
 
 if __name__ == '__main__':
     sign_into_geeksforgeeks(username='abhishek_g0yal', password='cKGRg$Niap#yBm9')
-    input('proceed?')
+    time.sleep(3)
     solved_problems = get_solved_problems()
     with open('solved_problems.json', 'w') as f:
         json.dump(solved_problems, f, indent=4)
