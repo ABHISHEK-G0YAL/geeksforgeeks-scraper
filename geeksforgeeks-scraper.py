@@ -1,10 +1,10 @@
 '''
 Author: Abhishek Goyal
 
-LeetCode Scraper is a python program that logins into your LeetCode account, and copies your code for your solved 
+GeeksforGeeks Scraper is a python program that logins into your GeeksforGeeks account, and copies your code for your solved 
 problems into its corresponding file.
 
-For example, your solution to the problem <name> will be stored in the file <name>.cpp
+For example, your solution to the problem <name> will be stored in the file <name>.<lang>
 '''
 
 TIME_DELAY = 5
