@@ -47,8 +47,8 @@ def get_code(problem_link):
     ActionChains(driver).key_down(Keys.CONTROL).send_keys('c').key_up(Keys.CONTROL).perform()
     code = pyperclip.paste()
     problem_link = '// ' + problem_link + '\n'
-    info = '// '+ status + '\n\n'
-    return problem_link + info + code, lang
+    info = '// '+ status + '\n' if status != 'Correct' else ''
+    return problem_link + info + '\n' + code, lang
 
 def save_codes(solved_problems, path):
     os.makedirs(path, exist_ok=True)
